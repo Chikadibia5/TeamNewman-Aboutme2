@@ -1,0 +1,828 @@
+{
+	"info": {
+		"_postman_id": "7cb79b54-888f-4046-b9ec-aaedf461a49c",
+		"name": "MyTutorCollection",
+		"description": "For collection of my own examples during tutorial training",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25899003"
+	},
+	"item": [
+		{
+			"name": "All my GET Request",
+			"item": [
+				{
+					"name": "example.com",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "My-Own-Header",
+								"value": "Postman Revision"
+							}
+						],
+						"url": {
+							"raw": "example.com ",
+							"host": [
+								"example",
+								"com "
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Postman Logo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.getpostman.com/img/v2/logo-glyph.png",
+							"protocol": "https",
+							"host": [
+								"www",
+								"getpostman",
+								"com"
+							],
+							"path": [
+								"img",
+								"v2",
+								"logo-glyph.png"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "All my POST Request",
+			"item": [
+				{
+					"name": "example.com with POST",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "My-Own-Header",
+								"value": "Postman Revision"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Firstname",
+									"value": "Ibironke Yekinni",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "example.com ",
+							"host": [
+								"example",
+								"com "
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://www.getpostman.com/img/v2/logo-glyph.png",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"name": "Content-Type",
+								"value": "application/json",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"ibironke\",\n    \"level\": \"400Level\",\n    \"department\": \"Computer Science\"\n}"
+						},
+						"url": {
+							"raw": "https://www.getpostman.com/img/v2/logo-glyph.png",
+							"protocol": "https",
+							"host": [
+								"www",
+								"getpostman",
+								"com"
+							],
+							"path": [
+								"img",
+								"v2",
+								"logo-glyph.png"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://www.getpostman.com/img/v2/logo-glyph.png",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"name": "Content-Type",
+								"value": "application/json",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"ibironke\",\n    \"level\": \"400Level\",\n    \"department\": \"Computer Science\"\n}"
+						},
+						"url": {
+							"raw": "https://www.getpostman.com/img/v2/logo-glyph.png",
+							"protocol": "https",
+							"host": [
+								"www",
+								"getpostman",
+								"com"
+							],
+							"path": [
+								"img",
+								"v2",
+								"logo-glyph.png"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://www.getpostman.com/img/v2/logo-glyph.png",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"name": "Content-Type",
+								"value": "application/json",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"ibironke\",\n    \"level\": \"400Level\",\n    \"department\": \"Computer Science\"\n}"
+						},
+						"url": {
+							"raw": "https://www.getpostman.com/img/v2/logo-glyph.png",
+							"protocol": "https",
+							"host": [
+								"www",
+								"getpostman",
+								"com"
+							],
+							"path": [
+								"img",
+								"v2",
+								"logo-glyph.png"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trello",
+			"item": [
+				{
+					"name": "Testing",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Board name should be: 'Ibironke Board (2)'\"), function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.value).to.eql('Ibironke Board (2)');",
+									"};"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://api.trello.com/1/boards/?name=Ibironke Board (2)&key=cb4b4021f8d3faa976f51fbfd3a31246&token=e0ac336a8fd917ee73aaa3f315a799be0a03959088132df90511108e92ba58c9&defaultLists=false",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Ibironke Board (2)"
+								},
+								{
+									"key": "key",
+									"value": "cb4b4021f8d3faa976f51fbfd3a31246"
+								},
+								{
+									"key": "token",
+									"value": "e0ac336a8fd917ee73aaa3f315a799be0a03959088132df90511108e92ba58c9"
+								},
+								{
+									"key": "defaultLists",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cottytalk Demo 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/cards/5ad9ff5e43d49ec760adbdc5?key={{API_key}}&token={{API_token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"cards",
+								"5ad9ff5e43d49ec760adbdc5"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{API_key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{API_token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "My assignment",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "591cfc0d6f9f439e82120e3997984477"
+					}
+				],
+				"url": {
+					"raw": "https://api.nytimes.com/svc/books/v3/lists.json?list=hardcover-nonfiction&published-date=2018-04-22&rank-last-week=4&rank=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nytimes",
+						"com"
+					],
+					"path": [
+						"svc",
+						"books",
+						"v3",
+						"lists.json"
+					],
+					"query": [
+						{
+							"key": "list",
+							"value": "hardcover-nonfiction"
+						},
+						{
+							"key": "published-date",
+							"value": "2018-04-22"
+						},
+						{
+							"key": "rank-last-week",
+							"value": "4"
+						},
+						{
+							"key": "rank",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Api Status oyoh",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"\r",
+							"console.log(response.status);\r",
+							"console.log(response [\"status\"]);\r",
+							"\r",
+							"pm.test(\"status should be ok\",() => {\r",
+							"    pm.expect(1).to.eql(1);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/status/",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"status",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/books?Limit=20",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "Limit",
+							"value": "20",
+							"description": "non-fiction"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List of books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/books",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "2",
+									"description": "non-fiction",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 19 Feb 2023 18:07:20 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "417"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"1a1-MfqhfTYtZO2sguD1mJq8Vf41WjU\""
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"The Russian\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Just as I Am\",\n        \"type\": \"non-fiction\",\n        \"available\": false\n    },\n    {\n        \"id\": 3,\n        \"name\": \"The Vanishing Half\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 4,\n        \"name\": \"The Midnight Library\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Untamed\",\n        \"type\": \"non-fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Viscount Who Loved Me\",\n        \"type\": \"fiction\",\n        \"available\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get single book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/books/:bookid?=2&=&=2",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"books",
+						":bookid"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "2"
+						},
+						{
+							"key": "",
+							"value": ""
+						},
+						{
+							"key": null,
+							"value": "2"
+						}
+					],
+					"variable": [
+						{
+							"key": "bookid",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register API Client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientName\": \"Oyoh\",\r\n    \"clientEmail\":\"oyoh@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}//api-clients",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"",
+						"api-clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order Book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookId\": 1,\r\n\"customerName\":\"{{$randomAvatarImage}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}//Orders",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"",
+						"Orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get An Order",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookId\": 1,\r\n\"customerName\":\"{{$randomAvatarImage}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/Orders?=chika",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"",
+						"Orders"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "chika"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all book Orders",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookId\": 1,\r\n\"customerName\":\"{{$randomAvatarImage}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/orders/:orderId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"orders",
+						":orderId"
+					],
+					"variable": [
+						{
+							"key": "orderId",
+							"value": "yrytsjV453R-Tsm1Tl7bO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookId\": 1,\r\n\"customerName\":\"{{$randomAvatarImage}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/orders/:orderId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"orders",
+						":orderId"
+					],
+					"variable": [
+						{
+							"key": "orderId",
+							"value": "yrytsjV453R-Tsm1Tl7bO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Oyoh Emmanuel Chikadibia",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code should be  200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"    pm.test(\"Body is correct\", function () {\r",
+							"        pm.response.to.have.body(\"response_body_string\");\r",
+							"    });\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.test(\"Your test name\", function () {\r",
+							"        var jsonData = pm.response.json();\r",
+							"        pm.expect(jsonData.value).to.eql(100);\r",
+							"    });\r",
+							"    pm.test(\"Body matches string\", function () {\r",
+							"        pm.expect(pm.response.text()).to.include(\"string_you_want_to_search\");\r",
+							"    });\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/swagger.json",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"swagger.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swagger.json",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code should be 200\", function () {\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/swagger.json",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"swagger.json"
+					]
+				},
+				"description": "Learning How to navigate on postman"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "edgegrid"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "accessToken",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
